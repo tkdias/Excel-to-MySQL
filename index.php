@@ -6,7 +6,6 @@ require_once('vendor/SpreadsheetReader.php');
 if (isset($_POST["import"]))
 {
     
-    
   $allowedFileType = ['application/vnd.ms-excel','text/xls','text/xlsx','application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'];
   
   if(in_array($_FILES["file"]["type"],$allowedFileType)){
@@ -65,7 +64,7 @@ if (isset($_POST["import"]))
 <style>    
 body {
 	font-family: Arial;
-	width: 550px;
+	
 }
 
 .outer-container {
